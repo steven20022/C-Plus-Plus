@@ -1,8 +1,10 @@
 // include pre-processor directives
 #include <iostream>
+#include <iomanip>
 
 #define NUM 34568.80
 
+// use C++ standard libary namespace
 using namespace std;
 
 // // this function will use the comparison operators, 
@@ -54,6 +56,11 @@ void decisions1(void) {
     // declare a variable of type float
     // intiialize it using constant defined in header file
     float num = NUM;
+
+    // show decimal point and trailing zeros on the output stream object
+    cout << fixed << showpoint;
+    // show three digits to the right of the decimal on the output stream object
+    cout << setprecision(3);
 
     // use if statement
     if (num < 40000.0)
