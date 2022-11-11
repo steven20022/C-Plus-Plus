@@ -36,4 +36,14 @@ int main() {
     // congratulate1("Jacob", "C++", "Bjarne Stoustrup");
     // congratulate2("Jacob", "C++", "Bjarne Stoustrup");
     accessStructMembers();
+    // declare a Person struct
+    Person p;
+
+    // assign values to its members
+    p.heightInMeters = 1.778;
+    p.weigthInKilos = 77;
+
+    // call the bodyMassIndex function pass the struct as an argument
+    // output the return from the bodyMassIndex function
+    cout << bodyMassIndex(p);
 }
